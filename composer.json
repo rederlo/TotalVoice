@@ -1,0 +1,25 @@
+{
+  "name": "rederlo/totalvoice",
+  "type": "library",
+  "description": "Biblioteca de integração com a API da TotalVoice",
+  "require-dev": {
+    "phpunit/phpunit": "5.7.6"
+  },
+  "authors": [
+    {
+      "name": "Ederlo Rodrigo",
+      "email": "ederlo.contato@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "rederlo\\TotalVoice\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TotalVoiceTest\\": "test/TotalVoiceTest"
+    }
+  }
+}
