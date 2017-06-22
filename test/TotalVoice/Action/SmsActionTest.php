@@ -34,7 +34,7 @@ class SmsActionTest extends \PHPUnit_Framework_TestCase
     public function testSend()
     {
         $sms = new Sms();
-        $sms->setNumeroDestino('41998274011');
+        $sms->setNumeroDestino('4199999999');
         $sms->setMensagem("teste");
         $sms->setRespostaUsuario(false);
 

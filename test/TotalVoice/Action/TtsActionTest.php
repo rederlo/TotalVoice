@@ -36,7 +36,7 @@ class TtsActionTest extends \PHPUnit_Framework_TestCase
     public function testSend()
     {
         $tts = new Tts();
-        $tts->setNumeroDestino('41998274011');
+        $tts->setNumeroDestino('4199999999');
         $tts->setMensagem("teste");
         $tts->setRespostaUsuario(false);
         $tts->setBina('xxxx-xxxx');
