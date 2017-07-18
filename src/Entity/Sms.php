@@ -27,7 +27,12 @@ class Sms extends Entity
     /**
      * @var
      */
-    private $resposta_usuario;
+    private $resposta_usuario = false;
+
+    /**
+     * @var
+     */
+    private $multi_sms = false;
 
     /**
      * @return mixed
@@ -75,5 +80,29 @@ class Sms extends Entity
     public function setRespostaUsuario($resposta_usuario)
     {
         $this->resposta_usuario = $resposta_usuario;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMultiSms()
+    {
+        return $this->multi_sms;
+    }
+
+    /**
+     * @param mixed $multi_sms
+     */
+    public function setMultiSms($multi_sms)
+    {
+        $this->multi_sms = $multi_sms;
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return get_object_vars($this);
     }
 }

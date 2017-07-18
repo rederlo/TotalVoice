@@ -42,6 +42,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals(402, $response->getStatusCode());
         $this->assertInstanceOf('rederlo\\TotalVoice\\Http\\HttpClient', $this->Http);
+
     }
 
     /**
@@ -54,18 +55,18 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('rederlo\\TotalVoice\\Http\\HttpClient', $this->Http);
     }
 
-    /**
-     *
-     */
-    public function testPut()
-    {
-        $conta = new Conta();
-        $conta->setNome("Ederlo Rodrigo");
-        $conta->setLogin('rederlo');
-        $conta->setSenha("1234");
-
-        $response = $this->Http->put('/conta', $conta->toArray());
-        $this->assertEquals(200, $response->getStatusCode());
-        $this->assertInstanceOf('rederlo\\TotalVoice\\Http\\HttpClient', $this->Http);
-    }
+//    /**
+//     *
+//     */
+//    public function testPut()
+//    {
+//        $conta = new Conta();
+//        $conta->setNome("Ederlo Rodrigo");
+//        $conta->setLogin('rederlo');
+//        $conta->setSenha("1234");
+//
+//        $response = $this->Http->put('/conta', $conta->toArray());
+//        $this->assertEquals(200, $response->getStatusCode());
+//        $this->assertInstanceOf('rederlo\\TotalVoice\\Http\\HttpClient', $this->Http);
+//    }
 }

@@ -174,4 +174,12 @@ class Conta extends Entity
     {
         $this->nome_fantasia = $nome_fantasia;
     }
+
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return get_object_vars($this);
+    }
 }
